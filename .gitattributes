@@ -1,0 +1,44 @@
+# --------------------------------------------------
+# Text file handling
+# --------------------------------------------------
+* text=auto eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# YAML files
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# PowerShell scripts
+*.ps1 text eol=crlf
+
+# Terraform
+*.tf text eol=lf
+*.tfvars text eol=lf
+
+# Markdown documentation
+*.md text eol=lf
+
+# --------------------------------------------------
+# Binary files
+# --------------------------------------------------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.tar.gz binary
+
+# --------------------------------------------------
+# GitHub Linguist settings
+# --------------------------------------------------
+
+# Documentation folder
+docs/** linguist-documentation
+
+# Kubernetes manifests counted as YAML
+k8s/** linguist-language=YAML
+
+# Third-party/vendor code
+vendor/** linguist-vendored
